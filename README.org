@@ -25,14 +25,20 @@ You would just have to go through and fix the formatting of the document.
 
 For citations, cross-referencing, and more, I highly recommend installing [[https://github.com/jkitchin/org-ref][org-ref]].
 You can use the [[https://orgmode.org/manual/Citation-handling.html][new built-in citation system]][fn:1] for org mode (since version 9.5), but these templates are not optimized for it, as I couldn't get it to work for me yet.
+
+Each template includes some dummy citations and a dummy BibTeX file so one can get have examples of how to cite works in org mode.
+In all my templates I provide two macros called =bqstart= and =bqend=, which start and end blockquotes for LaTeX export.
+
+You generally should not have to touch the =.preamble.org= files, but if you need customization, these are where packages are imported and page layout is setup.
+*If you use pdfLaTeX to compile your documents, you will want to find your own solution for using Times New Roman font.*
+I use ~fontspec~ and set the main font to Times New Roman in all but the =general-apa= template, so if you plan to use any of those templates, switch your compiler to XeLaTeX or LuaLaTeX.
 * The =english-mla= Template
 This template does its best to adhere to the Purdue OWL [[https://owl.purdue.edu/owl/research_and_citation/mla_style/mla_style_introduction.html][guidelines for the MLA style]].
-** TODO add customization info for mla setup in readme :noexport:
-** TODO add org-ref setup :noexport:
-*** TODO add package biblatex in latex header in preamble
-*** TODO add skeleton code for bibliography with org-ref
-*** TODO add skeleton code for bibliography style with org ref
-*** TODO add csl for mla8 to dir for org-ref and setup in preamble
+Be sure to put the title of your work in the *Title* section, as the title is used to make the title of the actual document.
+Alternatively, you could just type in the title in the =#+begin_center= block yourself.
+The same thing goes for the date, but with the *Author* section, input your last name, as I expand a macro holding the author to have the heading with last name and page number in the top right.
+
+There are faculties provided to auto-generate your /Works Cited/ page, but should you need to edit it, you can edit the LaTeX specific parts.
 * The =general-apa= Template
 This template is for general documents that aren't required to fit any style.
 It's named "general-apa" because should you /need/ to include the occasional citation or bibliography, this template can do so according to APA format [[https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_style_introduction.html][according to the Purdue OWL]].

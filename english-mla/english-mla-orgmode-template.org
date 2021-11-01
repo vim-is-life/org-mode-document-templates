@@ -3,7 +3,7 @@
 #+AUTHOR: yourlastname
 #+SETUPFILE: ./.preamble.org
 # Specify bibliography here because org-ref likes it this way.
-#+LATEX_HEADER: \addbibresource{dummy.bib}
+#+LATEX_HEADER: \addbibresource{./dummy.bib}
 #
 
 #+BEGIN_flushleft
@@ -17,14 +17,13 @@ yourclass \\
 {{{title}}}
 #+end_center
 
-@@latex:\setlength{\parindent}{0.5in}@@
 
-body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. [[cite:&xu-2015-relat-between]]
+body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. [[citep:&xu-2015-relat-between 25]]
 
 {{{bqstart}}}
 This is a blockquote.
 Blockquotes need to be real lengthy for them to be blockquotes.
-Generally though, teachers don't want you to put too many of these in your essays becuase it makes it look like you're trying to fill up space [[citep:&boes-2015-suppor-infor]].
+Generally though, teachers don't want you to put too many of these in your essays becuase it makes it look like you're trying to fill up space [[citep:&xu-2015-relat-between 90]].
 {{{bqend}}}
 
 #+begin_export latex

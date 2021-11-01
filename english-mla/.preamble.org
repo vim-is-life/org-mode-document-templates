@@ -61,3 +61,7 @@
 # To make blockquotes single-spaced and indent more
 #+MACRO: bqstart @@latex:\begin{quote} \begin{spacing}{1.0}@@
 #+MACRO: bqend @@latex:\end{spacing} \end{quote}@@
+
+# To make paragraph length and bibliography hanging indent compliant
+@@latex:\setlength{\parindent}{0.5in}@@
+@@latex:\setlength{\bibhang}{0.5in}@@
