@@ -1,0 +1,40 @@
+#+TITLE: Your Title Here
+#+DATE: day month year
+#+AUTHOR: yourlastname
+#+SETUPFILE: ./.preamble.org
+# Specify bibliography here because org-ref likes it this way.
+#+LATEX_HEADER: \addbibresource{dummy.bib}
+#
+
+#+BEGIN_flushleft
+yourfirstnamehere {{{author}}} \\
+yourteachersname \\
+yourclass \\
+{{{date}}} \\
+#+END_flushleft
+
+#+begin_center
+{{{title}}}
+#+end_center
+
+@@latex:\setlength{\parindent}{0.5in}@@
+
+body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. [[cite:&xu-2015-relat-between]]
+
+{{{bqstart}}}
+This is a blockquote.
+Blockquotes need to be real lengthy for them to be blockquotes.
+Generally though, teachers don't want you to put too many of these in your essays becuase it makes it look like you're trying to fill up space [[citep:&boes-2015-suppor-infor]].
+{{{bqend}}}
+
+#+begin_export latex
+\newpage
+#+end_export
+# "Work Cited" if only one work
+#+begin_center
+Works Cited
+#+end_center
+@@latex:\printbibliography[heading=none]@@
+@@latex:\begin{comment}@@
+[[printbibliography:]]
+@@latex:\end{comment}@@

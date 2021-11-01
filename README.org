@@ -1,0 +1,60 @@
+#+OPTIONS: author:nil num:nil
+#+STARTUP: show2levels
+
+* Contents :TOC:noexport:
+- [[#what-is-this-repo][What is this repo?]]
+- [[#usage][Usage]]
+- [[#the-english-mla-template][The =english-mla= Template]]
+- [[#the-general-apa-template][The =general-apa= Template]]
+- [[#the-history-cmos-template][The =history-cmos= Template]]
+- [[#the-science-apa-template][The =science-apa= Template]]
+- [[#footnotes][Footnotes]]
+
+* What is this repo?
+This is a repository containing various templates to make documents in different styles using Emacs [[https://orgmode.org/][org-mode]].
+I try to do all my writing in org mode, and I decided that I would make my life easier by centralizing some of the skeletons that I use.
+I myself am just a student, and am far from an org mode (or git/GitHub) expert, so pull requests, issues, and suggestions are welcome!
+* Usage
+1. ~git clone~ the repo and just copy the templates to the directory of your assignment whenever you need to.
+2. Alternatively, ~curl~ or ~wget~ whatever template and (its respective preamble) you want and work that way.
+
+Please note that these templates are optimized for PDF/LaTeX export.
+You could probably still use these templates and do writing in them, and then make an ODT or a DOCX file with the default export capabilities or [[https://www.pandoc.org][pandoc]], if necessary.
+You would just have to go through and fix the formatting of the document.
+
+For citations, cross-referencing, and more, I highly recommend installing [[https://github.com/jkitchin/org-ref][org-ref]].
+You can use the [[https://orgmode.org/manual/Citation-handling.html][new built-in citation system]][fn:1] for org mode (since version 9.5), but these templates are not optimized for it, as I couldn't get it to work for me yet.
+* The =english-mla= Template
+This template does its best to adhere to the Purdue OWL [[https://owl.purdue.edu/owl/research_and_citation/mla_style/mla_style_introduction.html][guidelines for the MLA style]].
+** TODO add customization info for mla setup in readme :noexport:
+** TODO add org-ref setup :noexport:
+*** TODO add package biblatex in latex header in preamble
+*** TODO add skeleton code for bibliography with org-ref
+*** TODO add skeleton code for bibliography style with org ref
+*** TODO add csl for mla8 to dir for org-ref and setup in preamble
+* The =general-apa= Template
+This template is for general documents that aren't required to fit any style.
+It's named "general-apa" because should you /need/ to include the occasional citation or bibliography, this template can do so according to APA format [[https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_style_introduction.html][according to the Purdue OWL]].
+** TODO add customization info for apa-general setup in readme :noexport:
+** TODO add org-ref setup :noexport:
+*** TODO add package biblatex in latex header in preamble
+*** TODO add skeleton code for bibliography with org-ref
+*** TODO add skeleton code for bibliography style with org ref
+*** TODO add csl for mla8 to dir for org-ref and setup in preamble
+* The =history-cmos= Template
+This template does its best to adhere to the Purdue OWL [[https://owl.purdue.edu/owl/research_and_citation/chicago_manual_17th_edition/cmos_formatting_and_style_guide/chicago_manual_of_style_17th_edition.html][guidelines for the Chicago Manual of Style, 17th ed]] (notes-bibliography).
+** TODO add customization info for cmos setup in readme :noexport:
+** TODO add org-ref setup :noexport:
+*** TODO add package biblatex in latex header in preamble
+*** TODO add skeleton code for bibliography with org-ref
+*** TODO add skeleton code for bibliography style with org ref
+*** TODO add csl for mla8 to dir for org-ref and setup in preamble
+* TODO The =science-apa= Template
+** TODO add customization info for science-apa setup in readme :noexport:
+** TODO add org-ref setup :noexport:
+*** TODO add package biblatex in latex header in preamble
+*** TODO add skeleton code for bibliography with org-ref
+*** TODO add skeleton code for bibliography style with org ref
+*** TODO add csl for mla8 to dir for org-ref and setup in preamble
+* Footnotes
+[fn:1] See also: [[https://www.orgmode.org/Changes.html][the release notes]] and [[https://blog.tecosaur.com/tmio/2021-07-31-citations.html][this blog post]].
