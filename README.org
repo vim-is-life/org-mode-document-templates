@@ -38,7 +38,7 @@ Be sure to put the title of your work in the *Title* section, as the title is us
 Alternatively, you could just type in the title in the =#+begin_center= block yourself.
 The same thing goes for the date, but with the *Author* section, input your last name, as I expand a macro holding the author to have the heading with last name and page number in the top right.
 
-There are faculties provided to auto-generate your /Works Cited/ page, but should you need to edit it, you can edit the LaTeX specific parts.
+There are faculties provided to auto-generate your /Works Cited/ page, but should you need to edit it, you can edit the LaTeX specific parts. For citing works, you'll usually be using ~citep~ from org-ref.
 * The =general-apa= Template
 This template is for general documents that aren't required to fit any style.
 It's named "general-apa" because should you /need/ to include the occasional citation or bibliography, this template can do so according to APA format [[https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_style_introduction.html][according to the Purdue OWL]].
@@ -50,12 +50,10 @@ It's named "general-apa" because should you /need/ to include the occasional cit
 *** TODO add csl for mla8 to dir for org-ref and setup in preamble
 * The =history-cmos= Template
 This template does its best to adhere to the Purdue OWL [[https://owl.purdue.edu/owl/research_and_citation/chicago_manual_17th_edition/cmos_formatting_and_style_guide/chicago_manual_of_style_17th_edition.html][guidelines for the Chicago Manual of Style, 17th ed]] (notes-bibliography).
-** TODO add customization info for cmos setup in readme :noexport:
-** TODO add org-ref setup :noexport:
-*** TODO add package biblatex in latex header in preamble
-*** TODO add skeleton code for bibliography with org-ref
-*** TODO add skeleton code for bibliography style with org ref
-*** TODO add csl for mla8 to dir for org-ref and setup in preamble
+I use macro expansion with this template also, so be sure to put your name, title of your work, and the date in the proper sections.
+I don't normally have to make bibliographies with my CMoS papers, so if you need faculties for that you would have to add them yourself, or submit a pull request.
+
+Use ~autocite~ with org-ref to get the proper notes citation style.
 * TODO The =science-apa= Template
 ** TODO add customization info for science-apa setup in readme :noexport:
 ** TODO add org-ref setup :noexport:
