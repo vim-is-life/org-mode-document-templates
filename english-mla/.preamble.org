@@ -53,7 +53,12 @@
 
 # hyperref settings
 #+LATEX_HEADER_EXTRA: \hypersetup{
+#+LATEX_HEADER_EXTRA:   colorlinks=true,
 #+LATEX_HEADER_EXTRA:   urlcolor=cyan,
+#+LATEX_HEADER_EXTRA:   linktocpage=true,
+#+LATEX_HEADER_EXTRA:   linkcolor=black,
+#+LATEX_HEADER_EXTRA:   citecolor=black,
+#+LATEX_HEADER_EXTRA:   pdfpagemode=UseOutlines,
 #+LATEX_HEADER_EXTRA: }
 
 # For the hack later to make bibliotgraphy work right.

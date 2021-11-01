@@ -18,12 +18,12 @@ yourclass \\
 #+end_center
 
 
-body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. [[citep:&xu-2015-relat-between 25]]
+body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. [[autocite:&xu-2015-relat-between 25]]
 
 {{{bqstart}}}
 This is a blockquote.
 Blockquotes need to be real lengthy for them to be blockquotes.
-Generally though, teachers don't want you to put too many of these in your essays becuase it makes it look like you're trying to fill up space [[citep:&xu-2015-relat-between 90]].
+Generally though, teachers don't want you to put too many of these in your essays becuase it makes it look like you're trying to fill up space [[autocite:&xu-2015-relat-between 90]].
 {{{bqend}}}
 
 #+begin_export latex
