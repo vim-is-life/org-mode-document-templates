@@ -8,6 +8,7 @@
 - [[#the-general-apa-template][The =general-apa= Template]]
 - [[#the-history-cmos-template][The =history-cmos= Template]]
 - [[#the-science-apa-template][The =science-apa= Template]]
+- [[#license][License]]
 - [[#footnotes][Footnotes]]
 
 * What is this repo?
@@ -56,5 +57,7 @@ This template does its best to adhere to the Purdue OWL [[https://owl.purdue.edu
 *** TODO add skeleton code for bibliography with org-ref
 *** TODO add skeleton code for bibliography style with org ref
 *** TODO add csl for mla8 to dir for org-ref and setup in preamble
+* License
+See [[./LICENSE.org][this document]] with the info.
 * Footnotes
 [fn:1] See also: [[https://www.orgmode.org/Changes.html][the release notes]] and [[https://blog.tecosaur.com/tmio/2021-07-31-citations.html][this blog post]].
