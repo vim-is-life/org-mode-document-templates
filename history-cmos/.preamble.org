@@ -51,6 +51,11 @@
 #+LATEX_HEADER: \usepackage{url}
 #+LATEX_HEADER: \urlstyle{same}
 
+# hyperref settings
+#+LATEX_HEADER_EXTRA: \hypersetup{
+#+LATEX_HEADER_EXTRA:   urlcolor=cyan,
+#+LATEX_HEADER_EXTRA: }
+
 # For bibliographies and stuff outside of latex export
 #+CSL-STYLE: ./cmos-17-nb.csl
 #+CSL-LOCALE: en-US

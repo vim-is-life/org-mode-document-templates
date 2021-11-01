@@ -51,6 +51,11 @@
 #+LATEX_HEADER: \usepackage{url}
 #+LATEX_HEADER: \urlstyle{same}
 
+# hyperref settings
+#+LATEX_HEADER_EXTRA: \hypersetup{
+#+LATEX_HEADER_EXTRA:   urlcolor=cyan,
+#+LATEX_HEADER_EXTRA: }
+
 # For the hack later to make bibliotgraphy work right.
 #+LATEX_HEADER: \usepackage{comment}
 
