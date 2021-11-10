@@ -1,17 +1,20 @@
-#+OPTIONS: author:nil num:nil
-#+STARTUP: show2levels
+#+OPTIONS: author:nil num:nil toc:nil
+#+STARTUP: fold
 
-* Contents :TOC:noexport:
+* Contents :TOC:
 - [[#what-is-this-repo][What is this repo?]]
 - [[#usage][Usage]]
 - [[#the-english-mla-template][The =english-mla= Template]]
 - [[#the-general-apa-template][The =general-apa= Template]]
 - [[#the-history-cmos-template][The =history-cmos= Template]]
 - [[#the-science-apa-template][The =science-apa= Template]]
+- [[#issues][Issues]]
 - [[#license][License]]
 - [[#footnotes][Footnotes]]
 
 * What is this repo?
+*NOTE: This documentation is meant to be viewed within Emacs.*
+
 This is a repository containing various templates to make documents in different styles using Emacs [[https://orgmode.org/][org-mode]].
 I try to do all my writing in org mode, and I decided that I would make my life easier by centralizing some of the skeletons that I use.
 I myself am just a student, and am far from an org mode (or git/GitHub) expert, so pull requests, issues, and suggestions are welcome!
@@ -32,13 +35,15 @@ In all my templates I provide two macros called =bqstart= and =bqend=, which sta
 You generally should not have to touch the =.preamble.org= files, but if you need customization, these are where packages are imported and page layout is setup.
 *If you use pdfLaTeX to compile your documents, you will want to find your own solution for using Times New Roman font.*
 I use ~fontspec~ and set the main font to Times New Roman in all but the =general-apa= template, so if you plan to use any of those templates, switch your compiler to XeLaTeX or LuaLaTeX.
+
+Each repo has a =bib= directory, which has the CSL files for org ref, and the dummy bibliographies.
 * The =english-mla= Template
 This template does its best to adhere to the Purdue OWL [[https://owl.purdue.edu/owl/research_and_citation/mla_style/mla_style_introduction.html][guidelines for the MLA style]].
 Be sure to put the title of your work in the *Title* section, as the title is used to make the title of the actual document.
 Alternatively, you could just type in the title in the =#+begin_center= block yourself.
 The same thing goes for the date, but with the *Author* section, input your last name, as I expand a macro holding the author to have the heading with last name and page number in the top right.
 
-There are faculties provided to auto-generate your /Works Cited/ page, but should you need to edit it, you can edit the LaTeX specific parts. For citing works, you'll usually be using ~citep~ from org-ref.
+There are faculties provided to auto-generate your /Works Cited/ page, but should you need to edit it, you can edit the LaTeX specific parts. For citing works, you'll usually be using ~citep~ (or maybe ~autocite~ works as well?) from org-ref.
 * The =general-apa= Template
 This template is for general documents that aren't required to fit any style.
 It's named "general-apa" because should you /need/ to include the occasional citation or bibliography, this template can do so according to APA format [[https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_style_introduction.html][according to the Purdue OWL]].
@@ -53,15 +58,13 @@ This template does its best to adhere to the Purdue OWL [[https://owl.purdue.edu
 I use macro expansion with this template also, so be sure to put your name, title of your work, and the date in the proper sections.
 I don't normally have to make bibliographies with my CMoS papers, so if you need faculties for that you would have to add them yourself, or submit a pull request.
 
-Use ~autocite~ with org-ref to get the proper notes citation style.
-* TODO The =science-apa= Template
-** TODO add customization info for science-apa setup in readme :noexport:
-** TODO add org-ref setup :noexport:
-*** TODO add package biblatex in latex header in preamble
-*** TODO add skeleton code for bibliography with org-ref
-*** TODO add skeleton code for bibliography style with org ref
-*** TODO add csl for mla8 to dir for org-ref and setup in preamble
+Use ~autocite~ with org-ref to get the proper notes-bibliography citation style.
+* The =science-apa= Template
+This template does not differ much from the =general-apa= template. I don't provide the same tcolorbox environment though, and this is meant more so to typeset small assignments for a science class.
+* Issues
+I still haven't found a good way to implement the blockquotes in org-mode where they only indent on the left.
+If anyone can find out a way to do so, I'd greatly appreciate a pull request.
 * License
-See [[./LICENSE.org][this document]] with the info.
+See [[./LICENSE][this document]] with the info.
 * Footnotes
 [fn:1] See also: [[https://www.orgmode.org/Changes.html][the release notes]] and [[https://blog.tecosaur.com/tmio/2021-07-31-citations.html][this blog post]].

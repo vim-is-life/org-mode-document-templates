@@ -20,11 +20,11 @@ yourclass \\
 
 body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. body text here. [[citep:&xu-2015-relat-between 25]]
 
-{{{bqstart}}}
+#+begin_displayquote
 This is a blockquote.
 Blockquotes need to be real lengthy for them to be blockquotes.
 Generally though, teachers don't want you to put too many of these in your essays becuase it makes it look like you're trying to fill up space [[citep:&xu-2015-relat-between 90]].
-{{{bqend}}}
+#+end_displayquote
 
 #+begin_export latex
 \newpage
