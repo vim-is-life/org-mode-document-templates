@@ -65,7 +65,7 @@
 #+LATEX_HEADER: \usepackage{comment}
 
 # For bibliographies and stuff outside of latex export
-#+CSL-STYLE: ./mla-8.csl
+#+CSL-STYLE: ./bib/mla-8.csl
 #+CSL-LOCALE: en-US
 
 # To make blockquotes single-spaced and indent more

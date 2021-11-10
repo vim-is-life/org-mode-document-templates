@@ -62,7 +62,7 @@
 #+LATEX_HEADER_EXTRA: }
 
 # For bibliographies and stuff outside of latex export
-#+CSL-STYLE: ./cmos-17-nb.csl
+#+CSL-STYLE: ./bib/cmos-17-nb.csl
 #+CSL-LOCALE: en-US
 
 # To make blockquotes single-spaced and indent more

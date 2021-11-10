@@ -3,7 +3,7 @@
 #+AUTHOR: yourfirstname yourlastname
 #+SETUPFILE: ./.preamble.org
 # Specify bibliography here because org-ref likes it this way.
-#+LATEX_HEADER: \addbibresource{./dummy.bib}
+#+LATEX_HEADER: \addbibresource{./bib/citations.bib}
 
 #+begin_tcolorbox
 This is an assignment question.
