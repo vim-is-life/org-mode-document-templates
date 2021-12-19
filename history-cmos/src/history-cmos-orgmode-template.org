@@ -3,7 +3,10 @@
 #+AUTHOR: yourfirstname yourlastname
 #+SETUPFILE: ./.preamble.org
 # Specify bibliography here because org-ref likes it this way.
-#+LATEX_HEADER: \addbibresource{./bib/citations.bib}
+#+LATEX_HEADER: \addbibresource{../bib/citations.bib}
+#+EXPORT_FILE_NAME: <your-file-name-here>
+@@latex:\setlength{\parindent}{0.5in}@@
+@@latex:\setlength{\bibindent}{0.5in}@@
 
 #+begin_center
 {{{title}}}

@@ -1,15 +1,18 @@
-#+TITLE: Your Title Here
-#+DATE: day month year
-#+AUTHOR: yourlastname
+#+TITLE: <Your Title Here>
+#+DATE: <day month year>
+#+AUTHOR: <yourlastname>
 #+SETUPFILE: ./.preamble.org
 # Specify bibliography here because org-ref likes it this way.
-#+LATEX_HEADER: \addbibresource{./bib/citations.bib}
-#
+#+LATEX_HEADER: \addbibresource{../bib/citations.bib}
+#+EXPORT_FILE_NAME: ../build/<your-file-name-here>
+# To make paragraph length and bibliography hanging indent compliant
+@@latex:\setlength{\parindent}{0.5in}@@
+@@latex:\setlength{\bibhang}{0.5in}@@
 
 #+BEGIN_flushleft
-yourfirstnamehere {{{author}}} \\
-yourteachersname \\
-yourclass \\
+<yourfirstnamehere> {{{author}}} \\
+<yourteachersname> \\
+<yourclass> \\
 {{{date}}} \\
 #+END_flushleft
 

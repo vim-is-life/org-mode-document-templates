@@ -506,3 +506,9 @@ $RECYCLE.BIN/
 *.pdf
 *.tex
 *.fls
+*.json
+/img/
+/resources/
+/bib/Final Paper.bib
+/build/
+/interesting-photos/

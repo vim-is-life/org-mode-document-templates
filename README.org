@@ -8,6 +8,10 @@
 - [[#the-general-apa-template][The =general-apa= Template]]
 - [[#the-history-cmos-template][The =history-cmos= Template]]
 - [[#the-science-apa-template][The =science-apa= Template]]
+- [[#add-presentation-template][add presentation template]]
+- [[#modify-other-templates][modify other templates]]
+  - [[#add-gitignores][add gitignores]]
+  - [[#add-better-directory-structure][add better directory structure]]
 - [[#issues][Issues]]
 - [[#license][License]]
 - [[#footnotes][Footnotes]]
@@ -61,6 +65,11 @@ I don't normally have to make bibliographies with my CMoS papers, so if you need
 Use ~autocite~ with org-ref to get the proper notes-bibliography citation style.
 * The =science-apa= Template
 This template does not differ much from the =general-apa= template. I don't provide the same tcolorbox environment though, and this is meant more so to typeset small assignments for a science class.
+* TODO add presentation template
+* TODO modify other templates
+** TODO add gitignores
+** DONE add better directory structure
+CLOSED: [2021-12-19 Sun 14:32]
 * Issues
 I still haven't found a good way to implement the blockquotes in org-mode where they only indent on the left.
 If anyone can find out a way to do so, I'd greatly appreciate a pull request.

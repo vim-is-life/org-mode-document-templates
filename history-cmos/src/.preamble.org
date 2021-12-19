@@ -1,10 +1,12 @@
+# In my CMoS essays, I generally don't need a TOC or section numbering. Moreover,
+# I don't need a cover page, so I the title switch.
 #+OPTIONS: toc:nil num:nil author:t title:nil
 
 # Xelatex because it's my preferred, 12pt and letterpaper according to MLA spec.
 #+LATEX_COMPILER: xelatex
 #+LATEX_CLASS_OPTIONS: [12pt, letterpaper]
 
-# MLA says documents should have 1in margins and typically be TNR font.
+# CMoS says documents should have 1in margins and typically be TNR font.
 #+LATEX_HEADER: \usepackage[margin=1in]{geometry}
 #+LATEX_HEADER: \usepackage{fontspec}
 #+LATEX_HEADER: \setmainfont{Times New Roman}
@@ -21,9 +23,9 @@
 
 # To include the author and page number in the header of the page
 #+LATEX_HEADER_EXTRA: \makeatletter
-#+LATEX_HEADER_EXTRA:   \lhead{}
+#+LATEX_HEADER_EXTRA:   \lhead{\@author}
 #+LATEX_HEADER_EXTRA:   \chead{}
-#+LATEX_HEADER_EXTRA:   \rhead{\@author\ \thepage}
+#+LATEX_HEADER_EXTRA:   \rhead{\thepage}
 #+LATEX_HEADER_EXTRA:   \lfoot{}
 #+LATEX_HEADER_EXTRA:   \cfoot{}
 #+LATEX_HEADER_EXTRA:   \rfoot{}
@@ -32,18 +34,18 @@
 #+LATEX_HEADER_EXTRA: \renewcommand{\footrulewidth}{0pt}
 #+LATEX_HEADER_EXTRA: \setlength{\headheight}{14.5pt}
 
-# For bibliographies and citations.
+# For bibliographies and citations, use autocite for citations
 #+LATEX_HEADER: \usepackage{lmodern}
 #+LATEX_HEADER: \usepackage{csquotes}
 #+LATEX_HEADER: \usepackage[english]{babel}
 #+LATEX_HEADER: \usepackage[
-#+LATEX_HEADER:   style=apa,
+#+LATEX_HEADER:   notes,
+#+LATEX_HEADER:   noibid=true,
 #+LATEX_HEADER:   hyperref=true,
 #+LATEX_HEADER:   maxcitenames=3,
 #+LATEX_HEADER:   url=true,
 #+LATEX_HEADER:   backend=biber,
-#+LATEX_HEADER:   natbib=true,
-#+LATEX_HEADER: ]{biblatex}
+#+LATEX_HEADER: ]{biblatex-chicago}
 
 # To have embedded and hyperlinked urls
 #+LATEX_HEADER: \usepackage{url}
@@ -59,17 +61,10 @@
 #+LATEX_HEADER_EXTRA:   pdfpagemode=UseOutlines,
 #+LATEX_HEADER_EXTRA: }
 
-# For the hack later to make bibliotgraphy work right.
-#+LATEX_HEADER: \usepackage{comment}
-
 # For bibliographies and stuff outside of latex export
-#+CSL-STYLE: ./bib/apa-7.csl
+#+CSL-STYLE: ./bib/cmos-17-nb.csl
 #+CSL-LOCALE: en-US
 
 # To make blockquotes single-spaced and indent more
 #+MACRO: bqstart @@latex:\begin{quote} \begin{spacing}{1.0}@@
 #+MACRO: bqend @@latex:\end{spacing} \end{quote}@@
-
-# To make paragraph length and bibliography hanging indent compliant
-@@latex:\setlength{\parindent}{0.5in}@@
-@@latex:\setlength{\bibhang}{0.5in}@@
