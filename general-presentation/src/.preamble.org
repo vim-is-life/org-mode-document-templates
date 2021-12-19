@@ -1,0 +1,10 @@
+#+OPTIONS: toc:nil num:nil author:t title:t date:t
+
+# Change this if you want a different theme.
+#+reveal_theme: moon
+# Change this if you have a local installation or different way of sourcing revealjs.
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+
+# Below macros taken from:
+# - https://raw.githubusercontent.com/fniessen/org-macros/master/org/org-macros.setup
+#+SETUPFILE: ./.macros.org
